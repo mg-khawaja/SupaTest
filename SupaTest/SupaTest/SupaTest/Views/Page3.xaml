@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SupaTest.Views.Page3"
+             Title="Page3">
+    <ContentPage.Content>
+        <StackLayout 
+            Spacing="20"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="welcome "/>
+                        <Span Text="{Binding username}"/>
+                        <Span Text="!"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <ActivityIndicator IsRunning="True" IsVisible="{Binding IsBusy}" 
+                               HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
